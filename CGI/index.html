@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Page</title>
+    <title>Computer Graphics and Interaction</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,8 +21,8 @@
             text-align: center;
         }
 
-        header h1 { font-size: 2.2rem; letter-spacing: 0.02em; }
-        header p  { font-size: 1.05rem; margin-top: 0.4rem; opacity: 0.85; }
+        header h1 { font-size: 2rem; letter-spacing: 0.02em; }
+        header p  { font-size: 1rem; margin-top: 0.4rem; opacity: 0.85; }
 
         nav {
             background: #12283f;
@@ -65,31 +65,43 @@
             font-family: Arial, sans-serif;
         }
 
+        section h3 {
+            font-size: 1.05rem;
+            color: #1a3a5c;
+            margin-top: 1.4rem;
+            margin-bottom: 0.6rem;
+            font-family: Arial, sans-serif;
+        }
+
         section p { margin-bottom: 0.9rem; }
 
         ul { list-style: none; padding: 0; }
 
         ul li {
-            padding: 0.55rem 0;
+            padding: 0.6rem 0;
             border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
         }
 
         ul li:last-child { border-bottom: none; }
 
+        ul li .year {
+            font-family: Arial, sans-serif;
+            font-size: 0.82rem;
+            color: #888;
+            white-space: nowrap;
+            min-width: 5.5rem;
+        }
+
         ul li a {
             color: #1a3a5c;
             text-decoration: none;
-            font-size: 1.02rem;
+            font-size: 1rem;
         }
 
         ul li a:hover { text-decoration: underline; }
-
-        ul li .meta {
-            font-size: 0.85rem;
-            color: #666;
-            font-family: Arial, sans-serif;
-            margin-left: 0.5rem;
-        }
 
         footer {
             text-align: center;
@@ -103,46 +115,56 @@
 <body>
 
 <header>
-    <h1>Prof. [Your Name]</h1>
-    <p>[Position] &mdash; [Department], [University]</p>
+    <h1>Computer Graphics and Interaction</h1>
+    <p>[University] &mdash; [Department]</p>
 </header>
 
 <nav>
+    <a href="/">&#8592; Academic Page</a>
     <a href="#about">About</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#contact">Contact</a>
+    <a href="#demos">Demo Projects</a>
 </nav>
 
 <main>
 
     <section id="about">
-        <h2>About</h2>
+        <h2>About the Course</h2>
         <p>
-            Welcome to my academic page. I am a [position] in the [Department] at [University].
-            My research focuses on [research interests]. I am also passionate about teaching and
-            developing interactive educational materials for my courses.
+            This course introduces fundamental concepts in computer graphics and interactive systems.
+            Students explore topics such as rendering, animation, simulation, and user interaction,
+            applying them through practical programming projects.
         </p>
         <p>
-            [Add a short bio paragraph here — institution, background, ongoing projects, etc.]
+            [Add course description, learning objectives, or any additional details here.]
         </p>
     </section>
 
-    <section id="teaching">
-        <h2>Teaching</h2>
+    <section id="demos">
+        <h2>Demo Projects</h2>
+        <p>
+            The following interactive demos were created by students as part of their project
+            assignments (P1) for each academic year.
+        </p>
+
+        <h3>Project 1 (P1)</h3>
         <ul>
             <li>
-                <a href="/CGI/">Computer Graphics and Interaction (CGI)</a>
-                <span class="meta">— includes interactive demo projects</span>
+                <span class="year">2024 / 2025</span>
+                <a href="/CGI/demos/2425_P1_DancingCurves/index.min.html">Dancing Curves</a>
+            </li>
+            <li>
+                <span class="year">2023 / 2024</span>
+                <a href="/CGI/demos/2324_P1_IteratedFunctionSystems/index.min.html">Iterated Function Systems</a>
+            </li>
+            <li>
+                <span class="year">2022 / 2023</span>
+                <a href="/CGI/demos/2223_P1_GravitySimulation/index.min.html">Gravity Simulation</a>
+            </li>
+            <li>
+                <span class="year">2021 / 2022</span>
+                <a href="/CGI/demos/2122_P1_ElectricFields/index.min.html">Electric Fields</a>
             </li>
         </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-        <p>
-            [Department] &bull; [University] &bull; [Address]
-        </p>
     </section>
 
 </main>
